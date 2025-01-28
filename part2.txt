@@ -1,0 +1,8 @@
+To load value of variable from component.ts file -
+    - {{variable_name}}
+    - this variable is present in export command
+
+constructor(){
+    // code which is automatically executed
+    // also written inside export command
+}

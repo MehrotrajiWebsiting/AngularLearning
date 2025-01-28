@@ -1,0 +1,37 @@
+INSTALL node and npm
+
+INSTALL angular CLI - npm install -g @angular/cli
+- It is used to create angular project
+
+STEPS to create new app -
+1) ng new app_name  -  Generate new angular app  ( delete ng.ps1 from AppData/Roaming/npm it will give cannot run scripts when executing this commang )
+2) cd app_name 
+3) ng serve - Get the base app to open in browser
+
+SOURCE CODE in src
+    - index.html page is loaded
+    - The <app-root> tag gets data from app folder
+    - the html comes from app.component.html
+    - the css for this html comes from app.component.css
+    - the typescript for the component is in app.component.ts
+    - app.component.spec.ts is used for testing
+    - app.module.ts is entry point in angular. It CONTAINS - 
+        - ALL MODULES THAT ARE IMPORTED
+        - declarations = all components that we make
+        - imports = external modules like BrowserModule (for dom manipulation) and AppRoutingModule (for opening new URL without reloading the page)
+        - providers and bootstrap 
+        - exporting the module
+
+INSTALLING BOOTSTRAP IN ANGULAR
+    - npm install bootstrap
+    - npm install jquery
+    - confirm by checking in package.json - dependencies
+    - GOTO angular.json - architect - build - styles
+    - Add path for bootstrap css: "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    - GOTO angular.json - architect - build - scripts
+    - Add path for bootstrap js: "./node_modules/bootstrap/dist/js/bootstrap.js"
+
+CREATING NEW COMPONENT
+    - ng generate component folder_name/component_name
+    - folder name is not necessary (only for better management)
+    - you can find the component in app folder
