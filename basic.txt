@@ -30,6 +30,7 @@ INSTALLING BOOTSTRAP IN ANGULAR
     - Add path for bootstrap css: "./node_modules/bootstrap/dist/css/bootstrap.min.css"
     - GOTO angular.json - architect - build - scripts
     - Add path for bootstrap js: "./node_modules/bootstrap/dist/js/bootstrap.js"
+    - App path for jquery: "./node_modules/jquery/dist/jquery.js"
 
 CREATING NEW COMPONENT
     - ng generate component folder_name/component_name

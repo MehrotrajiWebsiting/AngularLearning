@@ -6,3 +6,16 @@ constructor(){
     // code which is automatically executed
     // also written inside export command
 }
+
+in component.ts of components - we have @Component decorator which has
+    @Component({
+        selector: 'app-root' - type of component/ it has the name which is used to access component
+        imports: 
+        templateUrl: './app.component.html' - url for template 
+        styleUrl: './app.component.css' - url for css
+    })
+
+you can use this component by 
+    - importing it in app.component.ts file
+    - mentioning the component class name in @Component.import array
+    - writing its tag in app.component.html

@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TodosComponent } from './MyComponents/todos/todos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,TodosComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'todo-list';
   xyz = 1;
   constructor(){
-    setTimeout(() =>{
-      this.title = 'om';
-    },5000)
+    // setTimeout(() =>{
+    //   this.title = 'om';
+    // },5000)
   }
 }
