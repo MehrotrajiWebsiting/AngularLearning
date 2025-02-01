@@ -9,7 +9,7 @@ import { TodosComponent } from './MyComponents/todos/todos.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'todo-list';
+  title = 'Todos List';
   xyz = 1;
   constructor(){
     // setTimeout(() =>{

@@ -1,0 +1,14 @@
+Create models in app
+    - create .ts file 
+    - export class file-name
+    - define variables and datatype inside the class
+    - give them default values as it was giving error in my case
+
+Using this model 
+    - in component.ts file create a property and assign it this value as type with default value or initialize using constructor
+        example - todos : Todo[] = []
+    - to use component values 
+        - define them in ngOnInit(): void 
+        - use Common module to use ngFor
+        - in the html page use  *ngFor = "let todo of todos" and use its properties inside tag by {{todo.title}}
+        - ngFor directive is used here which works LIKE a for loop
